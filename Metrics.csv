@@ -1,0 +1,15 @@
+Lines of code metrics,Sat, 10 Oct 2020 10:56:00 CST
+Package,LOC,LOC(rec),LOCp,LOCp(rec),LOCt,LOCt(rec)
+"",364,364,364,364,0,0
+
+Module,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+"NotePad",0,"2,034",364,0,417,"2,815",364,0,"2,805",354,0
+
+FileType,LOC,NCLOC
+"HTML","2,034","2,034"
+"Java",364,354
+"XML",417,417
+
+Project,L(Groovy),L(HTML),L(J),L(KT),L(XML),LOC,LOCp,LOCt,NCLOC,NCLOCp,NCLOCt
+"project",0,"2,034",364,0,417,"2,815",364,0,"2,805",354,0
+

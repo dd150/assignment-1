@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.3" sequence="0" timestamp="1602298493463" analysisTimestamp="1602298490338" release="">
+  <Project projectName="NotePad[NotePad]">
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$Print.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$Export.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$Time_and_date_Act.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$NextSearch.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$Search_Act.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$New_Act.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$Open_Act.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$Save_Act.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$Exit_Act.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$Cut_Act.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$Copy_Act.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$Paste_Act.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$About_Act.class</Jar>
+    <Jar>C:\Users\Administrator\IdeaProjects\NotePad\target\classes\Editor$Help_Act.class</Jar>
+    <AuxClasspathEntry>C:/Users/Administrator/IdeaProjects/NotePad/target/classes</AuxClasspathEntry>
+    <SrcDir>C:/Users/Administrator/IdeaProjects/NotePad/src/main/java</SrcDir>
+    <SrcDir>C:/Users/Administrator/IdeaProjects/NotePad/src/main/resources</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" instanceHash="b531c9f02911298cf2f6a6f3dcacd854" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to i in Editor$Exit_Act.actionPerformed(ActionEvent)</LongMessage>
+    <Class classname="Editor$Exit_Act" primary="true">
+      <SourceLine classname="Editor$Exit_Act" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+        <Message>In Editor.java</Message>
+      </SourceLine>
+      <Message>In class Editor$Exit_Act</Message>
+    </Class>
+    <Method classname="Editor$Exit_Act" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false" primary="true">
+      <SourceLine classname="Editor$Exit_Act" start="354" end="357" startBytecode="0" endBytecode="9" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java"/>
+      <Message>In method Editor$Exit_Act.actionPerformed(ActionEvent)</Message>
+    </Method>
+    <LocalVariable name="i" register="2" pc="17" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named i</Message>
+    </LocalVariable>
+    <SourceLine classname="Editor$Exit_Act" primary="true" start="355" end="355" startBytecode="16" endBytecode="16" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+      <Message>At Editor.java:[line 355]</Message>
+    </SourceLine>
+    <SourceLine classname="Editor$Exit_Act" primary="true" start="355" end="355" startBytecode="16" endBytecode="16" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+      <Message>At Editor.java:[line 355]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="i"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="c1614d10fdfd83addb4374e90f9f19e1" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource</ShortMessage>
+    <LongMessage>Editor$Open_Act.actionPerformed(ActionEvent) may fail to clean up java.io.InputStream</LongMessage>
+    <Class classname="Editor$Open_Act" primary="true">
+      <SourceLine classname="Editor$Open_Act" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+        <Message>In Editor.java</Message>
+      </SourceLine>
+      <Message>In class Editor$Open_Act</Message>
+    </Class>
+    <Method classname="Editor$Open_Act" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false" primary="true">
+      <SourceLine classname="Editor$Open_Act" start="312" end="323" startBytecode="0" endBytecode="227" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java"/>
+      <Message>In method Editor$Open_Act.actionPerformed(ActionEvent)</Message>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java">
+        <Message>In InputStream.java</Message>
+      </SourceLine>
+      <Message>Reference type java.io.InputStream</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="Editor$Open_Act" primary="true" start="317" end="317" startBytecode="35" endBytecode="35" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at Editor.java:[line 317] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="Editor$Open_Act" start="318" end="318" startBytecode="40" endBytecode="40" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at Editor.java:[line 318]</Message>
+    </SourceLine>
+    <SourceLine classname="Editor$Open_Act" start="321" end="321" startBytecode="54" endBytecode="54" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at Editor.java:[line 321]</Message>
+    </SourceLine>
+    <SourceLine classname="Editor$Open_Act" start="323" end="323" startBytecode="64" endBytecode="64" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at Editor.java:[line 323]</Message>
+    </SourceLine>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {InputStream x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="95dc78d78b1784c31b85d2d92dcc123e" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in Editor$Print.actionPerformed(ActionEvent): String.getBytes()</LongMessage>
+    <Class classname="Editor$Print" primary="true">
+      <SourceLine classname="Editor$Print" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+        <Message>In Editor.java</Message>
+      </SourceLine>
+      <Message>In class Editor$Print</Message>
+    </Class>
+    <Method classname="Editor$Print" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false" primary="true">
+      <SourceLine classname="Editor$Print" start="98" end="124" startBytecode="0" endBytecode="524" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java"/>
+      <Message>In method Editor$Print.actionPerformed(ActionEvent)</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="981" end="981" startBytecode="0" endBytecode="53" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="Editor$Print" primary="true" start="103" end="103" startBytecode="52" endBytecode="52" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+      <Message>At Editor.java:[line 103]</Message>
+    </SourceLine>
+    <SourceLine classname="Editor$Print" primary="true" start="103" end="103" startBytecode="52" endBytecode="52" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+      <Message>At Editor.java:[line 103]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" instanceHash="44673517530cb5b6f31376531599a729" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in Editor$Save_Act.actionPerformed(ActionEvent): String.getBytes()</LongMessage>
+    <Class classname="Editor$Save_Act" primary="true">
+      <SourceLine classname="Editor$Save_Act" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+        <Message>In Editor.java</Message>
+      </SourceLine>
+      <Message>In class Editor$Save_Act</Message>
+    </Class>
+    <Method classname="Editor$Save_Act" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false" primary="true">
+      <SourceLine classname="Editor$Save_Act" start="333" end="343" startBytecode="0" endBytecode="231" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java"/>
+      <Message>In method Editor$Save_Act.actionPerformed(ActionEvent)</Message>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="981" end="981" startBytecode="0" endBytecode="53" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.getBytes()</Message>
+    </Method>
+    <SourceLine classname="Editor$Save_Act" primary="true" start="338" end="338" startBytecode="52" endBytecode="52" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+      <Message>At Editor.java:[line 338]</Message>
+    </SourceLine>
+    <SourceLine classname="Editor$Save_Act" primary="true" start="338" end="338" startBytecode="52" endBytecode="52" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+      <Message>At Editor.java:[line 338]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="9bbfa690ff727b728096a6f70f8bd519" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource</ShortMessage>
+    <LongMessage>Editor$Save_Act.actionPerformed(ActionEvent) may fail to clean up java.io.OutputStream</LongMessage>
+    <Class classname="Editor$Save_Act" primary="true">
+      <SourceLine classname="Editor$Save_Act" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+        <Message>In Editor.java</Message>
+      </SourceLine>
+      <Message>In class Editor$Save_Act</Message>
+    </Class>
+    <Method classname="Editor$Save_Act" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false" primary="true">
+      <SourceLine classname="Editor$Save_Act" start="333" end="343" startBytecode="0" endBytecode="231" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java"/>
+      <Message>In method Editor$Save_Act.actionPerformed(ActionEvent)</Message>
+    </Method>
+    <Class classname="java.io.OutputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.OutputStream" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java">
+        <Message>In OutputStream.java</Message>
+      </SourceLine>
+      <Message>Reference type java.io.OutputStream</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="Editor$Save_Act" primary="true" start="337" end="337" startBytecode="35" endBytecode="35" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at Editor.java:[line 337] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="Editor$Save_Act" start="338" end="338" startBytecode="40" endBytecode="40" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at Editor.java:[line 338]</Message>
+    </SourceLine>
+    <SourceLine classname="Editor$Save_Act" start="341" end="341" startBytecode="58" endBytecode="58" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at Editor.java:[line 341]</Message>
+    </SourceLine>
+    <SourceLine classname="Editor$Save_Act" start="343" end="343" startBytecode="68" endBytecode="68" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at Editor.java:[line 343]</Message>
+    </SourceLine>
+    <String value="{OutputStream x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {OutputStream x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" instanceHash="4ffd23af9261740ed37737d19f939afb" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to close stream</ShortMessage>
+    <LongMessage>Editor$Save_Act.actionPerformed(ActionEvent) may fail to close stream</LongMessage>
+    <Class classname="Editor$Save_Act" primary="true">
+      <SourceLine classname="Editor$Save_Act" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+        <Message>In Editor.java</Message>
+      </SourceLine>
+      <Message>In class Editor$Save_Act</Message>
+    </Class>
+    <Method classname="Editor$Save_Act" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false" primary="true">
+      <SourceLine classname="Editor$Save_Act" start="333" end="343" startBytecode="0" endBytecode="30" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java"/>
+      <Message>In method Editor$Save_Act.actionPerformed(ActionEvent)</Message>
+    </Method>
+    <Type descriptor="Ljava/io/OutputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.OutputStream" start="48" end="193" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java">
+        <Message>At OutputStream.java:[lines 48-193]</Message>
+      </SourceLine>
+      <Message>Need to close java.io.OutputStream </Message>
+    </Type>
+    <SourceLine classname="Editor$Save_Act" primary="true" start="337" end="337" startBytecode="30" endBytecode="30" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+      <Message>At Editor.java:[line 337]</Message>
+    </SourceLine>
+    <SourceLine classname="Editor$Save_Act" primary="true" start="337" end="337" startBytecode="30" endBytecode="30" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+      <Message>At Editor.java:[line 337]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" instanceHash="201669cfa7921f67938222d899f49eee" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="563">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to date in Editor$Time_and_date_Act.actionPerformed(ActionEvent)</LongMessage>
+    <Class classname="Editor$Time_and_date_Act" primary="true">
+      <SourceLine classname="Editor$Time_and_date_Act" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+        <Message>In Editor.java</Message>
+      </SourceLine>
+      <Message>In class Editor$Time_and_date_Act</Message>
+    </Class>
+    <Method classname="Editor$Time_and_date_Act" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false" primary="true">
+      <SourceLine classname="Editor$Time_and_date_Act" start="233" end="244" startBytecode="0" endBytecode="27" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java"/>
+      <Message>In method Editor$Time_and_date_Act.actionPerformed(ActionEvent)</Message>
+    </Method>
+    <LocalVariable name="date" register="2" pc="8" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named date</Message>
+    </LocalVariable>
+    <SourceLine classname="Editor$Time_and_date_Act" primary="true" start="233" end="233" startBytecode="7" endBytecode="7" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+      <Message>At Editor.java:[line 233]</Message>
+    </SourceLine>
+    <SourceLine classname="Editor$Time_and_date_Act" primary="true" start="233" end="233" startBytecode="7" endBytecode="7" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+      <Message>At Editor.java:[line 233]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="date"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" instanceHash="20895e0bf65191abd2d4d9e6ce8a49c7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Should be a static inner class</ShortMessage>
+    <LongMessage>Should Editor$Time_and_date_Act be a _static_ inner class?</LongMessage>
+    <Class classname="Editor$Time_and_date_Act" primary="true">
+      <SourceLine classname="Editor$Time_and_date_Act" start="227" end="244" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java">
+        <Message>At Editor.java:[lines 227-244]</Message>
+      </SourceLine>
+      <Message>In class Editor$Time_and_date_Act</Message>
+    </Class>
+    <SourceLine classname="Editor$Time_and_date_Act" start="227" end="244" sourcefile="Editor.java" sourcepath="Editor.java" relSourcepath="java\Editor.java" synthetic="true">
+      <Message>At Editor.java:[lines 227-244]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="EXPERIMENTAL">
+    <Description>Experimental</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because SpotBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SIC_INNER_SHOULD_BE_STATIC" abbrev="SIC" category="PERFORMANCE">
+    <ShortDescription>Should be a static inner class</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This class is an inner class, but does not use its embedded reference
+  to the object which created it.&nbsp; This reference makes the instances
+  of the class larger, and may keep the reference to the creator object
+  alive longer than necessary.&nbsp; If possible, the class should be
+   made static.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="OBL_UNSATISFIED_OBLIGATION" abbrev="OBL" category="EXPERIMENTAL">
+    <ShortDescription>Method may fail to clean up stream or resource</ShortDescription>
+    <Details><![CDATA[
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          For sending feedback, check:
+          </p>
+          <ul>
+            <li><a href="https://github.com/spotbugs/spotbugs/blob/master/CONTRIBUTING.md">contributing guideline</a></li>
+            <li><a href="https://github.com/spotbugs/discuss/issues?q=">malinglist</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>, for
+          a description of the analysis technique.
+          </p>
+          
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="OS_OPEN_STREAM" abbrev="OS" category="BAD_PRACTICE">
+    <ShortDescription>Method may fail to close stream</ShortDescription>
+    <Details><![CDATA[
+
+<p> The method creates an IO stream object, does not assign it to any
+fields, pass it to other methods that might close it,
+or return it, and does not appear to close
+the stream on all paths out of the method.&nbsp; This may result in
+a file descriptor leak.&nbsp; It is generally a good
+idea to use a <code>finally</code> block to ensure that streams are
+closed.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="OS">
+    <Description>Stream not closed on all paths</Description>
+  </BugCode>
+  <BugCode abbrev="OBL">
+    <Description>Unsatisfied obligation to clean up stream or resource</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <BugCode abbrev="SIC">
+    <Description>Inner class could be made static</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 8 Oct 2020 21:39:10 +0800" total_classes="15" referenced_classes="339" total_bugs="8" total_size="298" num_packages="1" java_version="11.0.8" vm_version="11.0.8+10-b944.31" cpu_seconds="15.66" clock_seconds="23.76" peak_mbytes="808.08" alloc_mbytes="964.81" gc_seconds="0.22" priority_2="5" priority_1="3">
+    <FileStats path="Editor.java" bugCount="8" size="298" bugHash="75504e76a0138e43b06ac9bf8778fd89"/>
+    <PackageStats package="" total_bugs="8" total_types="15" total_size="298" priority_2="5" priority_1="3">
+      <ClassStats class="Editor" sourceFile="Editor.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="Editor$About_Act" sourceFile="Editor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="Editor$Copy_Act" sourceFile="Editor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="Editor$Cut_Act" sourceFile="Editor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="Editor$Exit_Act" sourceFile="Editor.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="Editor$Export" sourceFile="Editor.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="Editor$Help_Act" sourceFile="Editor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="Editor$New_Act" sourceFile="Editor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="Editor$NextSearch" sourceFile="Editor.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="Editor$Open_Act" sourceFile="Editor.java" interface="false" size="16" bugs="1" priority_2="1"/>
+      <ClassStats class="Editor$Paste_Act" sourceFile="Editor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="Editor$Print" sourceFile="Editor.java" interface="false" size="71" bugs="1" priority_1="1"/>
+      <ClassStats class="Editor$Save_Act" sourceFile="Editor.java" interface="false" size="16" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="Editor$Search_Act" sourceFile="Editor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="Editor$Time_and_date_Act" sourceFile="Editor.java" interface="false" size="15" bugs="2" priority_2="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="586" invocations="1752" avgMicrosecondsPerInvocation="334" maxMicrosecondsPerInvocation="13790" standardDeviationMicrosecondsPerInvocation="834"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="534" invocations="2" avgMicrosecondsPerInvocation="267451" maxMicrosecondsPerInvocation="303713" standardDeviationMicrosecondsPerInvocation="36258"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="503" invocations="1756" avgMicrosecondsPerInvocation="286" maxMicrosecondsPerInvocation="100788" standardDeviationMicrosecondsPerInvocation="3399"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="220" invocations="339" avgMicrosecondsPerInvocation="651" maxMicrosecondsPerInvocation="13097" standardDeviationMicrosecondsPerInvocation="1400"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="197" invocations="339" avgMicrosecondsPerInvocation="583" maxMicrosecondsPerInvocation="11849" standardDeviationMicrosecondsPerInvocation="1172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="113" invocations="729" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="2607" standardDeviationMicrosecondsPerInvocation="209"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="67" invocations="339" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="5544" standardDeviationMicrosecondsPerInvocation="431"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="58" invocations="419" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="14338" standardDeviationMicrosecondsPerInvocation="724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="57" invocations="339" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="6209" standardDeviationMicrosecondsPerInvocation="596"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
